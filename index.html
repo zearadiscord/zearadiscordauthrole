@@ -69,28 +69,26 @@ a{
 
 
  
-.aaa.line {
-  padding-bottom: 5px;
+a {
   position: relative;
+  display: inline-block;
+  text-decoration: none;
 }
-.aaa::before {
-  background: #ff701e;
+a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
   content: '';
   width: 100%;
   height: 2px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  transform-origin: right top;
+  background: #333;
   transform: scale(0, 1);
+  transform-origin: left top;
   transition: transform .3s;
 }
-.aaa:hover::before {
-  transform-origin: left top;
+a:hover::after {
   transform: scale(1, 1);
 }
- 
 
   
   
