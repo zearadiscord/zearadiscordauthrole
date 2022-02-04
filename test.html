@@ -92,7 +92,15 @@ h2{
 <body>
   <ul class="accordion-area">
 
-
+    <li>
+      <section>
+        <h3 class="title">地方ですが発注は可能でしょうか</h3>
+        <div class="box">
+          <p>可能です。お気軽にご相談ください。</p>
+        </div>
+      </section>
+    </li>
+      
     <li>
       <section>
         <h3 class="title">セミナーやイベントの出演を依頼したいのですが</h3>
@@ -121,7 +129,6 @@ $('.title').on('click', function() {//タイトル要素をクリックしたら
 
 //ページが読み込まれた際にopenクラスをつけ、openがついていたら開く動作※不必要なら下記全て削除
 $(window).on('load', function(){
-  $('.accordion-area li:first-of-type section').addClass("open"); //accordion-areaのはじめのliにあるsectionにopenクラスを追加
   $(".open").each(function(index, element){ //openクラスを取得
     var Title =$(element).children('.title'); //openクラスの子要素のtitleクラスを取得
     $(Title).addClass('close');       //タイトルにクラス名closeを付与し
