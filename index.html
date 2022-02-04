@@ -2,6 +2,7 @@
   
 <head>
 <meta charset="UTF-8">
+<link href="menutest.scss" rel="stylesheet" type="text/css" media="all">
 <title>ホーム</title>
 <style>
 body {
@@ -88,6 +89,61 @@ a:hover::after {
   
   </style>
   </head>
+  
+<body>
+  
+  
+<div class="menu">
+  <div class="btn trigger">
+    <span class="line"></span>
+  </div>
+  <div class="icons">
+    <div class="rotater">
+      <div class="btn btn-icon">
+        <i class="fa fa-codepen"></i>
+      </div>
+    </div>
+    <div class="rotater">
+      <div class="btn btn-icon">
+        <i class="fa fa-facebook"></i>
+      </div>
+    </div>
+    <div class="rotater">
+      <div class="btn btn-icon">
+        <i class="fa fa-google-plus"></i>
+      </div>
+    </div>
+    <div class="rotater">
+      <div class="btn btn-icon">
+        <i class="fa fa-twitter"></i>
+      </div>
+    </div>
+    <div class="rotater">
+      <div class="btn btn-icon">
+        <i class="fa fa-dribbble"></i>
+      </div>
+    </div>
+    <div class="rotater">
+      <div class="btn btn-icon">
+        <i class="fa fa-linkedin"></i>
+      </div>
+    </div>
+    <div class="rotater">
+      <div class="btn btn-icon">
+        <i class="fa fa-github"></i>
+      </div>
+    </div>
+    <div class="rotater">
+      <div class="btn btn-icon">
+        <i class="fa fa-behance"></i>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  
+  
 <nav>
   <ul>
     <li><a href="index.html" class="aaa">HOME</a></li>
@@ -108,4 +164,16 @@ open&save<br>
 </h3>
 
 <h4><a href="zeara-code-editor.zip" download>ダウンロード</a></h2><br>
+<script>
+  
+  
+$(document).ready(function() {
+  $(".trigger").click(function() {
+    $(".menu").toggleClass("active"); 
+  });
+});
+  
+  
+</script>
+</body>
 </html>
